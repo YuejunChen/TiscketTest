@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/trainNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_alignParentLeft="true"
+        android:padding="30dp"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/trainNumber"
+        android:padding="10dp"
+        >
+        <TextView
+        android:id="@+id/trainTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"/>
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/trainTime">
+            <ImageView
+                android:id="@+id/train_pic"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/train_pic"/>
+            <TextView
+                android:id="@+id/trainStation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/train_pic"
+                android:textSize="20dp"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/passenger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relative"
+            android:textSize="15dp"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/timg"
+        android:layout_below="@+id/trainNumber"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-60dp" />
+
+</RelativeLayout>

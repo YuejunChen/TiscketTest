@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent" android:orientation="vertical"
+    android:gravity="top|center_horizontal"
+    android:padding="15dip" xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="top"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent" android:orientation="vertical">
+        <TableLayout android:layout_height="wrap_content"
+                     android:layout_width="fill_parent"
+                     android:gravity="center"
+                     android:layout_marginBottom="25dp">
+            <TableRow>
+                <ImageView android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" android:src="@drawable/logo"/>
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:paddingTop="20dip"
+                    android:text="火车票购买" android:textSize="30sp"
+                    android:textStyle="bold"/>
+            </TableRow>
+        </TableLayout>
+        <TableLayout android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:stretchColumns="3"
+                     android:layout_marginBottom="-2dp">
+            <TableRow>
+                <TextView android:id="@+id/startStation_label"
+                          android:layout_gravity="left"
+                          android:textSize="25sp"
+                          android:layout_marginRight="55dp"/>
+                <ImageView
+                          android:id="@+id/turn"
+                          android:layout_gravity="center"
+                          android:layout_height="wrap_content"
+                          android:layout_width="wrap_content"
+                          android:src="@drawable/arrow"/>
+                <TextView android:id="@+id/arriveStation_label"
+                          android:layout_gravity="right"
+                          android:textSize="25sp"
+                          android:layout_marginLeft="45dp"/>
+            </TableRow>
+        </TableLayout>
+        <TableLayout android:layout_height="wrap_content"
+            android:layout_width="wrap_content" android:stretchColumns="1"
+            android:layout_marginBottom="25dp">
+            <TableRow>
+                <ImageView
+                    android:layout_height="wrap_content"
+                    android:layout_width="145sp"
+                    android:src="@drawable/line"
+                    android:layout_marginRight="55dp"/>
+                <ImageView
+                    android:layout_height="wrap_content"
+                    android:layout_width="145sp"
+                    android:src="@drawable/line"/>
+            </TableRow>
+        </TableLayout>
+        <TableLayout android:layout_height="wrap_content"
+            android:layout_width="wrap_content" android:stretchColumns="1">
+            <TableRow>
+                <TextView android:text="日期：" android:textSize="25sp"/>
+                <EditText android:gravity="left" android:id="@+id/startData_label"
+                          android:ems="10"
+                          android:textSize="25sp"
+                          android:focusable="false"/>
+            </TableRow>
+        </TableLayout>
+        <TableLayout android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingTop="10dip" android:stretchColumns="1">
+            <TableRow>
+                <TextView android:text=" "/>
+                <Button android:id="@+id/ticketSearch_button"
+                    android:layout_width="wrap_content" android:text="查询"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:paddingTop="15dp"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:gravity="center|center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最近查询"
+            android:textSize="25dp"
+            android:paddingBottom="12dp"/>
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="135dp"
+            android:divider="#00000000"
+            android:dividerHeight="13dp">
+        </ListView>
+
+    </LinearLayout>
+
+</LinearLayout>

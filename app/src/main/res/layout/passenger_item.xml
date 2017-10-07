@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/edit"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/pen"/>
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/edit"
+        android:textSize="20dp"
+        android:padding="8dp"
+        android:background="@null"
+        android:focusable="false"/>
+    <EditText
+        android:id="@+id/userNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/userName"
+        android:textSize="20dp"
+        android:padding="8dp"
+        android:background="@null"
+        android:focusable="false"/>
+    <ImageButton
+        android:id="@+id/delete"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_toRightOf="@+id/userNumber"
+        android:src="@drawable/delete"
+        android:padding="8dp"
+        android:visibility="invisible"/>
+    <ImageButton
+        android:id="@+id/save"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/save"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible"/>
+
+</RelativeLayout>
